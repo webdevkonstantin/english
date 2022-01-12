@@ -70,7 +70,7 @@ function createLink(data){
         }
     }
 }
-
+// const navData1 = JSON.parse("data.json");
 const navData = [
     {title: 'Game', link: '/games'},
     {title: 'Community',  link: '/community', keyName: 'community', submenu: [
