@@ -3,7 +3,7 @@ var nav = document.getElementById('navigation');
 // Формирование ссылок на пункты меню
 function linkHref(link, name){
     // return ('<a href="'+ link +'">'+ name + '</a>');
-    return ('<a href="#" type="button" onclick=selectTheme(2)>'+ name + '</a>');
+    return ('<a href="#" type="button" onclick=selectTheme('+ link + ')>'+ name + '</a>');
 }
 
 function subsubmenu(parent, childdata){
@@ -88,10 +88,10 @@ const navData = [
     {"title": "Game", "link": "/games"},
     {"title": "Повседневное",  "link": "/community", "keyName": "community", "submenu": [
             {"title": "Время",  "link": "/time", "keyName": "media2", "submenu": [
-                    {"title": "Дни недели",  "link": "/days", "en":[ "Ford", "BMW", "Fiat"], "ru":[ "Форд", "БМВ", "Фиат"]},
-                    {"title": "Месяцы года",  "link": "/demon-hunter"},
-                    {"title": "Monk",  "link": "/monk"},
-                    {"title": "Witch Doctor",  "link": "/witch-doctor"}
+                    {"title": "Дни недели",  "link": "1", "en":[ "Ford", "BMW", "Fiat"], "ru":[ "Форд", "БМВ", "Фиат"]},
+                    {"title": "Месяцы года",  "link": "2"},
+                    {"title": "Monk",  "link": "3"},
+                    {"title": "Witch Doctor",  "link": "4"}
                 ]},
             {"title": "Gameplay", "link": "/games"},
             {"title": "Classes",  "link": "/community", "keyName": "classes2", "submenu": [
