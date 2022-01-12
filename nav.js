@@ -1,8 +1,9 @@
 
 var nav = document.getElementById('navigation');
-
+// Формирование ссылок на пункты меню
 function linkHref(link, name){
-    return ('<a href="'+ link +'">'+ name + '</a>');
+    // return ('<a href="'+ link +'">'+ name + '</a>');
+    return ('<a href="#" type="button" onclick=selectTheme(2)>'+ name + '</a>');
 }
 
 function subsubmenu(parent, childdata){
@@ -72,12 +73,23 @@ function createLink(data){
 }
 
 //TODO: Реализовать подгрузку из файла.
+
+// Replace ./data.json with your JSON feed
+fetch('./data.json').then(response => {
+    return response.json();
+}).then(data => {
+    // Work with JSON data here
+    console.log(data);
+}).catch(err => {
+    // Do something for an error here
+});
+
 const navData = [
     {"title": "Game", "link": "/games"},
-    {"title": "Community",  "link": "/community", "keyName": "community", "submenu": [
-            {"title": "Media",  "link": "/media", "keyName": "media2", "submenu": [
-                    {"title": "Barbarian",  "link": "/barbarian"},
-                    {"title": "Demon Hunter",  "link": "/demon-hunter"},
+    {"title": "Повседневное",  "link": "/community", "keyName": "community", "submenu": [
+            {"title": "Время",  "link": "/time", "keyName": "media2", "submenu": [
+                    {"title": "Дни недели",  "link": "/days", "en":[ "Ford", "BMW", "Fiat"], "ru":[ "Форд", "БМВ", "Фиат"]},
+                    {"title": "Месяцы года",  "link": "/demon-hunter"},
                     {"title": "Monk",  "link": "/monk"},
                     {"title": "Witch Doctor",  "link": "/witch-doctor"}
                 ]},
