@@ -88,7 +88,7 @@ const navData = [
     {"title": "Game", "link": "/games"},
     {"title": "Повседневное",  "link": "/community", "keyName": "community", "submenu": [
             {"title": "Время",  "link": "/time", "keyName": "media2", "submenu": [
-                    {"title": "Дни недели",  "link": "1", "en":[ "Ford", "BMW", "Fiat"], "ru":[ "Форд", "БМВ", "Фиат"]},
+                    {"title": "Дни недели",  "link": [{"en":["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"], "ru":["Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота", "Воскресение"]}]},
                     {"title": "Месяцы года",  "link": "2"},
                     {"title": "Monk",  "link": "3"},
                     {"title": "Witch Doctor",  "link": "4"}
