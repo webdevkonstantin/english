@@ -1,38 +1,38 @@
 [
-  {title: 'Game', link: '/games'},
-  {title: 'Community',  link: '/community', keyName: 'community', submenu: [
-    {title: 'Media',  link: '/media', keyName: 'media2', submenu: [
-      {title: 'Barbarian',  link: '/barbarian'},
-      {title: 'Demon Hunter',  link: '/demon-hunter'},
-      {title: 'Monk',  link: '/monk'},
-      {title: 'Witch Doctor',  link: '/witch-doctor'},
+  {"title": "Game", "link": "/games"},
+  {"title": "Community",  "link": "/community", "keyName": "community", "submenu": [
+    {"title": "Media",  "link": "/media", "keyName": "media2", "submenu": [
+      {"title": "Barbarian",  "link": "/barbarian"},
+      {"title": "Demon Hunter",  "link": "/demon-hunter"},
+      {"title": "Monk",  "link": "/monk"},
+      {"title": "Witch Doctor",  "link": "/witch-doctor"}
     ]},
-    {title: 'Gameplay', link: '/games'},
-    {title: 'Classes',  link: '/community', keyName: 'classes2', submenu: [
-      {title: 'Barbarian',  link: '/barbarian'},
-      {title: 'Demon Hunter',  link: '/demon-hunter'},
-      {title: 'Monk',  link: '/monk'},
-      {title: 'Witch Doctor',  link: '/witch-doctor'},
+    {"title": "Gameplay", "link": "/games"},
+    {"title": "Classes",  "link": "/community", "keyName": "classes2", "submenu": [
+      {"title": "Barbarian",  "link": "/barbarian"},
+      {"title": "Demon Hunter",  "link": "/demon-hunter"},
+      {"title": "Monk",  "link": "/monk"},
+      {"title": "Witch Doctor",  "link": "/witch-doctor"}
     ]},
-    {title: 'Beta',  link: '/beta'},
-    {title: 'Support',  link: '/support'}
+    {"title": "Beta",  "link": "/beta"},
+    {"title": "Support",  "link": "/support"}
   ]},
-  {title: 'Forums', link: '/forums', keyName: 'forums', submenu: [
-    {title: 'Media',  link: '/media', keyName: 'media', submenu: [
-      {title: 'Barbarian',  link: '/barbarian'},
-      {title: 'Demon Hunter',  link: '/demon-hunter'},
-      {title: 'Monk',  link: '/monk'},
-      {title: 'Witch Doctor',  link: '/witch-doctor'},
+  {"title": "Forums", "link": "/forums", "keyName": "forums", "submenu": [
+    {"title": "Media",  "link": "/media", "keyName": "media", "submenu": [
+      {"title": "Barbarian",  "link": "/barbarian"},
+      {"title": "Demon Hunter",  "link": "/demon-hunter"},
+      {"title": "Monk",  "link": "/monk"},
+      {"title": "Witch Doctor",  "link": "/witch-doctor"}
     ]},
-    {title: 'Gameplay', link: '/games'},
-    {title: 'Classes',  link: '/community', keyName: 'classes', submenu: [
-      {title: 'Barbarian',  link: '/barbarian'},
-      {title: 'Demon Hunter',  link: '/demon-hunter'},
-      {title: 'Monk',  link: '/monk'},
-      {title: 'Witch Doctor',  link: '/witch-doctor'},
+    {"title": "Gameplay", "link": "/games"},
+    {"title": "Classes",  "link": "/community", "keyName": "classes", "submenu": [
+      {"title": "Barbarian",  "link": "/barbarian"},
+      {"title": "Demon Hunter",  "link": "/demon-hunter"},
+      {"title": "Monk",  "link": "/monk"},
+      {"title": "Witch Doctor",  "link": "/witch-doctor"}
     ]},
-    {title: 'Beta',  link: '/beta'},
-    {title: 'Support',  link: '/support'}
+    {"title": "Beta",  "link": "/beta"},
+    {"title": "Support",  "link": "/support"}
   ]},
-  {title: 'Services',  link: '/services'},
+  {"title": "Services",  "link": "/services"}
 ]
