@@ -71,11 +71,7 @@ function createLink(data){
     }
 }
 
-// const navData = fetch("./data.json")
-//     .then(response => {
-//         return response.json();
-//     })
-//     .then(data => console.log(data));
+//TODO: Реализовать подгрузку из файла.
 const navData = [
     {"title": "Game", "link": "/games"},
     {"title": "Community",  "link": "/community", "keyName": "community", "submenu": [
