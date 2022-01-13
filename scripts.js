@@ -23,7 +23,9 @@ var outputMassive;
 var numberOfMistakes = 0;
 var wordNumber = 0;
 
-function selectTheme (){
+function selectTheme (theme){
+    console.log("selectTheme");
+    console.log(theme);
 
 
 

@@ -71,22 +71,25 @@ function createLink(data){
     }
 }
 
+//TODO: Реализовать подгрузку из файла.
 
-(async () => {
-    let DB = await(await fetch('data.json')).json();
-    // console.log(navJSON);
-    // navJSON = DB.submenu;
-    createLink(DB);
-
-})();
-
-// console.log(navJSON);
-
+// (async () => {
+//     let DB = await(await fetch('data.json')).json();
+//     // console.log(navJSON);
+//     // navJSON = DB.submenu;
+//     createLink(DB);
+//
+// })();
 
 
-// var t = JSON.parse('{"name": "", "skills": "", "jobtitel": "Entwickler", "res_linkedin": "GwebSearch"}');
-// alert(t['jobtitel'])
 
-// const myObj = JSON.parse(Object.entries(navJSON)[0]);
-// x = myObj.name;
-// alert(x);
+// Replace ./data.json with your JSON feed
+fetch('./data.json').then(response => {
+    return response.json();
+}).then(data => {
+    // Work with JSON data here
+    createLink(data);
+    // console.log(data);
+}).catch(err => {
+    // Do something for an error here
+});
