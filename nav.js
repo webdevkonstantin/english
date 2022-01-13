@@ -2,6 +2,7 @@
 var nav = document.getElementById('navigation');
 // Формирование ссылок на пункты меню
 function linkHref(link, name){
+    //TODO: разобраться, как правильно передавать аргумент при формирвоании статичных ссылок.
     return ('<a href="#" type="button" onclick=selectTheme('+ link + ')>'+ name + '</a>');
 }
 
