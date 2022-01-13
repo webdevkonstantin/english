@@ -2,7 +2,7 @@
   {"title": "Game", "link": "/games"},
   {"title": "Повседневное",  "link": "/community", "keyName": "community", "submenu": [
     {"title": "Время",  "link": "/time", "keyName": "media2", "submenu": [
-      {"title": "Дни недели",  "link": "daysOfTheWeek", "daysOfTheWeek": [["Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота", "Воскресение"], ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]]},
+      {"title": "Дни недели",  "link": [{"ru": ["Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота", "Воскресение"], "en": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]}]},
       {"title": "Месяцы года",  "link": "2"},
       {"title": "Monk",  "link": "3"},
       {"title": "Witch Doctor",  "link": "4"}

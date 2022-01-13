@@ -1,20 +1,6 @@
-// Настроить подгрузку данных из JSON локального файла
-
-// const planetsEn = ["Sun", "Mercury", "Venus", "Earth", "Moon", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune", "Pluto"];
-// var planetsRu = ["Солнце", "Меркурий", "Венера", "Земля", "Луна", "Марс", "Юпитер", "Сатурн", "Уран", "Нептун", "Плутон"];
-//
-// var monthsOfTheYearEn = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-// var monthsOfTheYearRu = ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"];
-//
-// var sociumEn = ["people", "family", "woman", "man",  "girl", "boy", "child", "friend", "husband", "wife"];
-// var sociumRu = ["люди", "семья", "женщина", "мужчина", "девочка", "мальчик", "ребёнок", "друг", "муж", "жена"];
-//
-// var roomNamesEn = ["Kitchen", "Bathroom", "Hall", "Living room", "Toilet", "Garage", "Pantry", "Closet", "Guest room", "Playroom", "Workshop", "Basement", "Attic"];
-// var roomNamesRu = ["Кухня", "Ванная", "Коридор", "Гостинная", "Туалет", "Гараж", "Кладовка", "Гардеробная", "Гостевая", "Игровая комната", "Мастерская", "Подвал", "Чердак"];
-
-
 const daysOfTheWeek = [["Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота", "Воскресение"], ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]];
-
+const months = [["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"], ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]];
+const planets = [["Солнце", "Меркурий", "Венера", "Земля", "Луна", "Марс", "Юпитер", "Сатурн", "Уран", "Нептун", "Плутон"], ["Sun", "Mercury", "Venus", "Earth", "Moon", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune", "Pluto"]];
 
 
 var inputMassive ;
@@ -28,14 +14,12 @@ function selectTheme (theme){
     console.log(theme);
 
 
-
 inputMassive = daysOfTheWeek[0];
 outputMassive = daysOfTheWeek[1];
 document.getElementById("translate").placeholder = "Write your translation";
 numberOfMistakes = 0
 wordNumber = 0;
 showWord();
-
 }
 
 selectTheme()
