@@ -1,11 +1,11 @@
 [
   {"title": "Game", "link": "/games"},
-  {"title": "Community",  "link": "/community", "keyName": "community", "submenu": [
-    {"title": "Media",  "link": "/media", "keyName": "media2", "submenu": [
-      {"title": "Barbarian",  "link": "/barbarian"},
-      {"title": "Demon Hunter",  "link": "/demon-hunter"},
-      {"title": "Monk",  "link": "/monk"},
-      {"title": "Witch Doctor",  "link": "/witch-doctor"}
+  {"title": "Повседневное",  "link": "/community", "keyName": "community", "submenu": [
+    {"title": "Время",  "link": "/time", "keyName": "media2", "submenu": [
+      {"title": "Дни недели",  "link": "daysOfTheWeek", "daysOfTheWeek": [["Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота", "Воскресение"], ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]]},
+      {"title": "Месяцы года",  "link": "2"},
+      {"title": "Monk",  "link": "3"},
+      {"title": "Witch Doctor",  "link": "4"}
     ]},
     {"title": "Gameplay", "link": "/games"},
     {"title": "Classes",  "link": "/community", "keyName": "classes2", "submenu": [

@@ -1,72 +1,42 @@
 // Настроить подгрузку данных из JSON локального файла
 
-var planetsEn = ["Sun", "Mercury", "Venus", "Earth", "Moon", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune", "Pluto"];
-var planetsRu = ["Солнце", "Меркурий", "Венера", "Земля", "Луна", "Марс", "Юпитер", "Сатурн", "Уран", "Нептун", "Плутон"];
+// const planetsEn = ["Sun", "Mercury", "Venus", "Earth", "Moon", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune", "Pluto"];
+// var planetsRu = ["Солнце", "Меркурий", "Венера", "Земля", "Луна", "Марс", "Юпитер", "Сатурн", "Уран", "Нептун", "Плутон"];
+//
+// var monthsOfTheYearEn = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+// var monthsOfTheYearRu = ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"];
+//
+// var sociumEn = ["people", "family", "woman", "man",  "girl", "boy", "child", "friend", "husband", "wife"];
+// var sociumRu = ["люди", "семья", "женщина", "мужчина", "девочка", "мальчик", "ребёнок", "друг", "муж", "жена"];
+//
+// var roomNamesEn = ["Kitchen", "Bathroom", "Hall", "Living room", "Toilet", "Garage", "Pantry", "Closet", "Guest room", "Playroom", "Workshop", "Basement", "Attic"];
+// var roomNamesRu = ["Кухня", "Ванная", "Коридор", "Гостинная", "Туалет", "Гараж", "Кладовка", "Гардеробная", "Гостевая", "Игровая комната", "Мастерская", "Подвал", "Чердак"];
 
-var daysOfTheWeekEn = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
-var daysOfTheWeekRu = ["Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота", "Воскресение"];
 
-var monthsOfTheYearEn = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-var monthsOfTheYearRu = ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"];
+const daysOfTheWeek = [["Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота", "Воскресение"], ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]];
 
-var sociumEn = ["people", "family", "woman", "man",  "girl", "boy", "child", "friend", "husband", "wife"];
-var sociumRu = ["люди", "семья", "женщина", "мужчина", "девочка", "мальчик", "ребёнок", "друг", "муж", "жена"];  
- 
-var roomNamesEn = ["Kitchen", "Bathroom", "Hall", "Living room", "Toilet", "Garage", "Pantry", "Closet", "Guest room", "Playroom", "Workshop", "Basement", "Attic"];
-var roomNamesRu = ["Кухня", "Ванная", "Коридор", "Гостинная", "Туалет", "Гараж", "Кладовка", "Гардеробная", "Гостевая", "Игровая комната", "Мастерская", "Подвал", "Чердак"];
 
 
 var inputMassive ;
 var outputMassive;
-var numberTheme;
 
 var numberOfMistakes = 0;
 var wordNumber = 0;
 
-function selectTheme (numberTheme){
-if (numberTheme == 1) {
-inputMassive = daysOfTheWeekRu;
-outputMassive = daysOfTheWeekEn;
+function selectTheme (){
+
+
+
+inputMassive = daysOfTheWeek[0];
+outputMassive = daysOfTheWeek[1];
 document.getElementById("translate").placeholder = "Write your translation";
 numberOfMistakes = 0
 wordNumber = 0;
 showWord();
 
-} else if (numberTheme == 2) {
-inputMassive = planetsRu;
-outputMassive = planetsEn;
-document.getElementById("translate").placeholder = "Write your translation";
-numberOfMistakes = 0
-wordNumber = 0;
-showWord();
-
-} else if (numberTheme == 3) {
-inputMassive = monthsOfTheYearRu;
-outputMassive = monthsOfTheYearEn;
-document.getElementById("translate").placeholder = "Write your translation";
-numberOfMistakes = 0
-wordNumber = 0;
-showWord();
-
-} else if (numberTheme == 4) {
-inputMassive = sociumRu;
-outputMassive = sociumEn;
-document.getElementById("translate").placeholder = "Write your translation";
-numberOfMistakes = 0
-wordNumber = 0;
-showWord();
-
-} else if (numberTheme == 5) {
-inputMassive = roomNamesRu;
-outputMassive = roomNamesEn;
-document.getElementById("translate").placeholder = "Write your translation";
-numberOfMistakes = 0
-wordNumber = 0;
-showWord();
-} 
 }
 
-selectTheme(1)
+selectTheme()
 showWord();
 
 function showWord() {
