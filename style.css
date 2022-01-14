@@ -1,14 +1,23 @@
 *{
     box-sizing: content-box;
 }
+
 body{
     background-color: #2F2F31;
     font-family: 'Open Sans Condensed', sans-serif;
 }
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
 .nav-item{
     position: relative;
     max-width: 200px;
 }
+
 .nav-item a{
     display: block;
     z-index: 100;
@@ -25,9 +34,11 @@ body{
     margin-top: -1px;
     max-width: 200px;
 }
+
 nav ul > .nav-item:first-child a{
     margin-top: 0px;
 }
+
 .submenu > ul{
     display: none;
     position: absolute;
@@ -36,11 +47,12 @@ nav ul > .nav-item:first-child a{
     top: 0;
     width: 200px;
 }
+
 .nav-item.submenu:hover > ul{
     display: block;
 }
 
-div.word {
+.word {
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
     margin-top: 12%;
@@ -50,9 +62,11 @@ a {
     color: #000080; /* Цвет обычной ссылки */
     padding: 2px; /* Поля вокруг текста */
 }
+
 a:visited {
     color: #800080; /* Цвет посещенной ссылки */
 }
+
 a:hover {
     text-decoration: none; /* Убираем подчеркивание */
     color: #fff; /* Цвет ссылки при наведении на нее курсора мыши */
